@@ -191,7 +191,7 @@ mysql -u root -p orders < sql/migrations/001_create_orders_table.sql
 ```
 4. Execute a aplicação:
 ```bash
-go run cmd/ordersystem/main.go
+cd cmd/ordersystem && go run main.go wire_gen.go
 ```
 
 ### Gerando código gRPC
