@@ -48,4 +48,12 @@ func (suite *OrderRepositoryTestSuite) TestGivenAnOrder_WhenSave_ThenShouldSaveO
 	suite.Equal(order.Price, orderResult.Price)
 	suite.Equal(order.Tax, orderResult.Tax)
 	suite.Equal(order.FinalPrice, orderResult.FinalPrice)
+
+	orders, err := repo.FindAll()
+	suite.NoError(err)
+	suite.Len(orders, 1)
+	suite.Equal(order.ID, orders[0].ID)
+	suite.Equal(order.Price, orders[0].Price)
+	suite.Equal(order.Tax, orders[0].Tax)
+	suite.Equal(order.FinalPrice, orders[0].FinalPrice)
 }
