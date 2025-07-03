@@ -1,0 +1,53 @@
+# Dados do Docker
+.docker/
+
+# Arquivos do OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Binários
+bin/
+ordersystem
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Arquivos de teste
+*.test
+*.out
+
+# Diretórios de dependências
+vendor/
+
+# Diretório de build
+dist/
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+*.swp
+*.swo
+*~
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Go workspace file
+go.work
+
+# Arquivos de configuração local
+*.local
+
+# Coverage
+coverage.out
